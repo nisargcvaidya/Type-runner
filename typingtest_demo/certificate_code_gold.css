@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+body, html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: linear-gradient(rgb(255, 255, 255),rgb(235, 255, 238));
+  display: table;
+  font-family: Georgia, serif;
+  font-size: 24px;
+  text-align: center;
+}
+.container {
+  background: linear-gradient(rgb(192, 248, 213),rgb(169, 242, 255));
+  border: 20px solid rgb(192, 163, 0);
+  width: 750px;
+  height: 563px;
+  display: table-cell;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+ 
+}
+
+.content{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: 'Lobster', cursive;
+}
+
+.logo {
+  color: rgb(1, 58, 8);
+  margin-bottom: 2.5rem;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Audiowide", sans-serif;
+}
+
+.marquee {
+  color: rgb(223, 202, 19);
+  font-size: 45px;
+  font-family: 'Lobster', cursive;
+  margin-top: 1rem;
+}
+.assignment {
+  margin: 20px;
+}
+.person {
+  border-bottom: 2px solid black;
+  font-size: 32px;
+  font-style: italic;
+  margin: 20px auto;
+  width: 400px;
+}
+.reason {
+  margin: 20px;
+}
+
+#download-button{
+    border-radius: 4px ;
+    width: 7rem;
+    height: 3rem;
+    background-color: rgb(209, 178, 1);
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 36.5rem;
+    margin-left: 70rem;
+    cursor: pointer;
+  }

@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+    font-family: "Poppins", sans-serif;
+  }
+body {
+    background: rgb(20, 20, 20);
+    margin: 0;
+  }
+
+/* editable text container css */
+.container {
+    width: 100vmin; /* just changed 80vmin to 90vmin*/
+    padding: 50px 30px; /* 50->45 & 30->27*/
+    background-color: #fff1f1;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 49%;
+    left: 50%;
+    border-radius: 20px;/* 10->30*/
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.384);
+  }
+
+  .inblt_lgn {
+    text-align: right;
+    margin-right: 2rem ;
+    margin-top: 2px;
+  }
+
+  .inblt_lgn .lgbt { 
+    color: rgb(0, 255, 128);
+    text-decoration: none;
+    justify-content: center;
+   } 
+
+.stats {
+    text-align: right;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+  }
+.stats span {
+    font-weight: 600;
+  }
+#quote {
+    text-align: justify;
+    margin: 50px 0 30px 0;
+  }
+textarea {
+    resize: none;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 5px;
+    font-size: 16px;
+  }
+button {
+    float: right;
+    margin-top: 20px;
+    background-color:rgb(0, 0, 0);
+    color: #48fd81;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+
+.result {
+    margin-top: 50px;
+    display: none;
+  }
+.result h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+.wrapper span {
+    font-weight: 600;
+  }
+.success {
+    color: #00ff51;
+  }
+.fail {
+    color: #ff0141;
+  }
+
+
+/* heading css */
+.heading{
+      font-size: 37px;
+      color: #48fd81;
+      display: flex;
+      justify-content: center;
+      font-family: "Audiowide", sans-serif;
+      /* color: linear-gradient(rgb(31, 255, 98), rgb(27, 255, 198)); */
+      /* background: linear-gradient(rgb(65, 253, 122), rgb(27, 255, 198)); */
+  }
+  
+  /* themes */
+#light a {
+  position: relative;     /*Position them relative to the browser window */ 
+  left: 20px;            /* Position them outside of the screen */
+  transition: 0.3s;       
+  padding: 9px;  
+  padding :left(20px);        
+  width: 100px;          
+  text-decoration: none;  
+  font-size: 20px;       
+  color: black;  
+  border-radius: 8px 8px 8px 8px; 
+}
+
+ #light a:hover {
+  background-color: white;
+} 
+
+#dark a {
+  position: relative; 
+  transition: 0.3s; 
+  padding: 9px; 
+  width: 100px; 
+  text-decoration: none; 
+  font-size: 20px; 
+  color: white; 
+  border-radius: 8px 8px 8px 8px; 
+}
+
+ #dark a:hover {
+  background-color: rgb(31, 31, 31);
+ } 
+
+
+/* The about link: 20px from the top with a green background */
+#lm {
+  left: 1100px;
+  top: 200px;
+  background-color: #5bff8f;
+}
+#dm {
+  left: 20px;
+  top: 230px;
+  background-color: #181818;
+}
+
+/* start-stop-reload buttons  */
+#start-test{
+    position: fixed; 
+    left: 500px;
+    margin-top: 5px;
+    transition: 0.3s; 
+    padding: 2px; 
+    text-decoration: none; 
+    font-size: 10px; 
+    color: rgb(0, 0, 0); 
+    border-radius: 8px 8px 8px 8px; 
+  }
+#start-test a{
+    color: #00ff51;
+  }
+
+#stop-test{
+    position: absolute; 
+    left: 500px;
+    margin-top: 5px;
+    transition: 0.3s; 
+    padding: 2px; 
+    text-decoration: none; 
+    font-size: 10px; 
+    color: rgb(0, 0, 0); 
+    border-radius: 8px 8px 8px 8px; 
+}
+#stop-test a{
+  color: #00ff51;
+}
+#reload{
+    position: fixed; 
+    transition: 0.3s; 
+    padding: 8px; 
+    left: 80px;
+    text-decoration: none; 
+    font-size: 20px; 
+    color: white; 
+    border-radius: 8px 8px 8px 8px; 
+  }
+#reload a{
+  color: #00ff51;
+}
+
+/* side menu */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1; /* z index is basically the z axis that means you can peneterate through your screen virtually in and out*/
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.45s;
+  padding-top: 70px;
+}
+.sidenav a {
+  padding: 40px 0px 0px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #5bff8f;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 36px;
+  margin-left: 20px;
+}
+
+.opnicn{
+  font-size:18px;
+  cursor:pointer;
+  color: #22d85b;
+  margin: -5.3rem 0rem 0rem 1.2rem;
+}
+
+/* typing certificate css*/
+/* .typ-cert .text{
+  color: #22d85b;
+  text-align: left;
+  text-decoration: none;
+}
+.typ-cert{
+  margin-top: 33.5rem;
+  margin-left: 1rem;
+} */
+
+
+/* footer components */
+.foot .socialmedia {
+  display: flex; 
+  justify-content: right;
+  margin-top: 33rem;
+  margin-right: 1rem; 
+  /* padding: 22rem; */
+  /* margin-left: 75rem;
+  margin-top: 0rem;
+  margin-bottom: -2rem;*/
+}
+
+.foot .socialmedia{
+  display: flex;
+  gap: 1rem;
+}
+
+.foot .socialmedia a{
+  color: #22d85b;
+   font-size: 24px; 
+ 
+}
+
+
+.foot .socialmedia a:hover{
+  color: rgb(153, 151, 151);
+  transform: scale(1.5);
+ 
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  .start {margin: auto;}
+}
